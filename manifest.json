@@ -1,0 +1,11 @@
+{
+    "name": "Remove Play Button",
+    "version": "1.0",
+    "description": "Removes the play button from EdX videos so you can take screenshots.",
+    "permissions": ["activeTab"],
+    "content_scripts": [{
+        "matches": ["*://courses.edx.org/courses/*"],
+        "js": ["remove_element.js"]
+    }],
+    "manifest_version": 2
+}
